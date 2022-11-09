@@ -1,17 +1,3 @@
-def sorting(arr, direction):
-    return 
-
-
-
-
-
-
-
-
-
-
-
-
 
 #функция min
 def Min():
@@ -34,3 +20,28 @@ def getSet(numbers):
     return list_of_unique_numbers
 
 print(getSet(numbers))
+
+
+
+#функция findTheMostReapetedEls
+def findTheMostReapetedEls():
+    list=[1, 1, 1, 3, 4, 2, 2, 2]
+    list_1=[(list.count(x),x) for x in set(list)]
+    max_count=max(list_1)[0]
+    for ele in list_1:
+        if ele[0]==max_count:
+            print(ele[1])
+findTheMostReapetedEls()
+
+# функция stack
+
+
+#функция checkForBadWord
+def checkForBadWord():
+    words = "Hi, Nikita"
+    index = words.find("Hi")
+    if (index !=-1):
+     print(True)
+    else:
+     print(False)
+checkForBadWord()
